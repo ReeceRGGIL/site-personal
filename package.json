@@ -4,7 +4,8 @@
   "description": "Personal Site",
   "main": "index.html",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css --recursive"
+    "sass": "node-sass -w scss/ -o dist/css --recursive",
+    "build": "node-sass scss/ -o dist/css --recursive"
   },
   "author": "",
   "license": "ISC",
