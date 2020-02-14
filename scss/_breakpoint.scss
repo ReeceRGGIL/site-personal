@@ -1,0 +1,29 @@
+@mixin sm {
+    @media (min-width: $breakpoint-small){
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: $breakpoint-medium){
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: $breakpoint-large){
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: $breakpoint-extra) {
+        @content;
+    }
+}
+
+@mixin bp($width) {
+    @media (max-width: $width+'px') {
+        @content;
+    }
+}

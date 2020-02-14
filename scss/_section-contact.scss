@@ -8,16 +8,24 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+
+        @include lg {
+            flex-direction: row;
+        }
 
         .contact-item {
             padding: 1rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: top;
             width: 100%;
             border-bottom: 1px solid $gray-white;
+
+            @include lg {
+                border-bottom: none;
+            }
 
             p {
                 padding-top: 1rem;

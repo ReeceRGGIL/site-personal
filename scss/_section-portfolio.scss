@@ -1,5 +1,7 @@
 #portfolio {
     @extend %section-dark;
+    
+    padding: 0rem 2rem;
 
     .portfolio-header {
         h1 {
@@ -19,7 +21,12 @@
         .major-wrapper {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
-            grid-gap: 2rem;
+                grid-gap: 2rem 0;
+
+            @include sm {
+                grid-gap: 2rem;
+
+            }
 
             .project-showcase {
                 @extend %portfolio-card;
@@ -30,7 +37,19 @@
             .project-major {
                 @extend %portfolio-card;
 
-                grid-column: span 6;
+                grid-column: span 12;
+
+                @include sm {
+                    grid-column: span 6;
+                }
+
+                @include md {
+                    grid-column: span 4;
+                }
+
+                @include lg {
+                    grid-column: span 3;
+                }
             }
         }
 
@@ -43,7 +62,23 @@
             .project-minor {
                 @extend %portfolio-card;
 
-                grid-column: span 3;
+                grid-column: span 6;
+
+                @include bp(450) {
+                    grid-column: span 12;
+                }
+
+                @include sm {
+                    grid-column: span 4;
+                }
+
+                @include md {
+                    grid-column: span 3;
+                }
+
+                @include lg {
+                    grid-column: span 2;
+                }
             }
         }
 
