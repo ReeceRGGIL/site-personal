@@ -1,0 +1,64 @@
+#portfolio {
+    @extend %section-dark;
+
+    .portfolio-header {
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    }
+
+
+    .project-wrapper {
+        padding-top: 5rem;
+
+        .major-wrapper {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-gap: 2rem;
+
+            .project-showcase {
+                @extend %portfolio-card;
+
+                grid-column: span 12;
+            }
+
+            .project-major {
+                @extend %portfolio-card;
+
+                grid-column: span 6;
+            }
+        }
+
+        .minor-wrapper {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-gap: 2rem;
+            margin-top: 2rem;
+
+            .project-minor {
+                @extend %portfolio-card;
+
+                grid-column: span 3;
+            }
+        }
+
+        .mini-wrapper {
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+
+            .project-mini {
+                margin-top: 1rem;
+                margin-right: 1rem;
+                @extend %portfolio-card;
+                white-space: nowrap;
+            }
+        }
+    }
+}

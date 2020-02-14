@@ -1,0 +1,38 @@
+// Color
+$main-color: #fc8c03;
+$secondary-color: #63FFe0;
+$light-color: #d5eeff;
+$medium-color: #78bbe6;
+$dark-color: #133145;
+$background-color: #141414;
+
+// Black and white
+$white: #fafafa;
+$black: #050505;
+$black-lighter-1: lighten( $black, 15% );
+$black-lighter-2: lighten( $black, 25% );
+$gray-white: #e6e6e6;
+
+
+// Sizing
+$website-width: 1280px;
+
+
+// Padding and margin
+$pds: 0.5rem;
+$pdm: 1rem;
+$pdl: 2rem;
+
+$mgs: 0.5rem;
+$mgm: 1rem;
+$mgl: 2rem;
+
+// Text
+$font-size-default: 1rem;
+$font-size-small: 0.75rem;
+$font-size-medium: 1.5rem;
+$font-size-large: 3rem;
+
+
+// Border
+$global-border-radius: 2px;

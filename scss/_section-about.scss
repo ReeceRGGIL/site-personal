@@ -1,0 +1,93 @@
+#about {
+    @extend %section-light;
+
+    #about-web-skills,
+    #about-other-web-skills,
+    #about-other-development-skills {
+        margin: 1rem 0rem;
+        padding: 1rem 0rem;
+        border-bottom: 1px solid $gray-white;
+    }
+
+    #about-other-development-skills {
+        margin: 1rem 0rem;
+        padding: 1rem 0rem;
+        border-bottom: none;
+    }
+
+    .skill-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        width: 100%;
+
+        a {
+            text-decoration: none;
+            color: $black;
+            transition: transform 500ms;
+
+            div {
+                display: flex;
+                align-items: center;
+                padding: 0.5rem;
+                padding-left: 1rem;
+                border: 1px solid $gray-white;
+                height: 3.5rem;
+                margin: 0.5rem 0.5rem;
+                border-radius: $global-border-radius;
+                transition: background 500ms ease-out, color 500ms;
+                height: 3.25rem;
+
+                i {
+                    text-align: center;
+                }
+
+                p {
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    text-align: center;
+                    margin: auto;
+                }
+            }
+
+            div.familiar {
+                color: $black-lighter-1;
+            }
+
+            div.working {
+                color: $black-lighter-2;
+            }
+        }
+
+        a:hover {
+            transform: scale(1.1);
+            
+            div {
+                color: $white;
+                background: $main-color;
+                border: none;
+            }
+        }
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+        margin: 1rem 0;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin: 0.75rem 0;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+        margin: 0.75rem 0;
+    }
+
+     ul {
+         li {
+             margin: 0.25rem 0;
+         }
+     }
+}

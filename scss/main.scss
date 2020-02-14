@@ -1,0 +1,29 @@
+@import 'variables';
+@import 'normalize';
+@import 'default';
+@import 'mixins';
+
+@import 'utility';
+@import 'navbar';
+@import 'section-header';
+@import 'section-about';
+@import 'section-portfolio';
+@import 'section-contact';
+@import 'background';
+@import 'footer';
+
+body {
+    background: $dark-color;
+    font-family: 'Inconsolata', sans-serif;
+    font-size: $font-size-default;
+
+    h1, h2, h3, h4, h5 ,h6 {
+        font-family: 'Roboto Mono', sans-serif;
+    }
+
+    p {
+        font-family: 'Inconsolata', sans-serif;
+    }
+
+}
+
