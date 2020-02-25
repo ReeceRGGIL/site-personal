@@ -4,7 +4,7 @@
   "description": "Personal Site",
   "main": "index.html",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css --recursive",
+    "sass": "npm run build && node-sass -w scss/ -o dist/css --recursive",
     "build": "node-sass scss/ -o dist/css --recursive"
   },
   "author": "",
