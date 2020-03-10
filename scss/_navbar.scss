@@ -72,10 +72,10 @@
 }
 
 #navbar-spacer {
-    height: 5rem;
+    height: 4rem;
     background: $background-color;
 
     @include md {
-        height: 4rem;
+        height: 3rem;
     }
 }
